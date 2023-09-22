@@ -14,3 +14,6 @@ def market_page():
         {'id': 3, 'name': 'Keyboard', 'barcode': '231985128446', 'price': 150}
     ]
     return render_template('market.html', items=items)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=4300,debug=True)
